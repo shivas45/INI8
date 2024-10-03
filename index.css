@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #new-task {
+    flex: 1;
+  padding: 10px;
+  border: 2px solid #c2edda; 
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  }
+  
+  #add-task {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+  }
+  
+  #add-task:hover {
+    background-color: #218838;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    margin-top: 20px;
+    background-color: #c89666;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  button.delete-task {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  button.delete-task:hover {
+    background-color: #c82333;
+  }
+  
+  .filter-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .filter-btn {
+    background-color: #2d545e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .filter-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #new-task {
+      font-size: 14px;
+    }
+  
+    li {
+      font-size: 14px;
+    }
+  }
+  
